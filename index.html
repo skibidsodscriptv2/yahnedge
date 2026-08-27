@@ -2,16 +2,64 @@
 <html>
 <head>
   <title>My Search</title>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background-image: url("background.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      font-family: Arial, sans-serif;
+    }
+
+    .search-box {
+      text-align: center;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 40px;
+      border-radius: 20px;
+    }
+
+    h1 {
+      color: white;
+    }
+
+    input {
+      padding: 15px;
+      width: 300px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+    }
+
+    button {
+      padding: 15px;
+      border: none;
+      border-radius: 8px;
+      background: #ff5a36;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
 </head>
 
 <body>
 
-  <h1>My Search</h1>
+  <div class="search-box">
+    <h1>My Search</h1>
 
-  <form action="https://duckduckgo.com/" method="get">
-    <input type="text" name="q" placeholder="Search DuckDuckGo..." required>
-    <button type="submit">Search</button>
-  </form>
+    <form action="https://duckduckgo.com/" method="get">
+      <input type="text" name="q" placeholder="Search DuckDuckGo..." required>
+      <button type="submit">Search</button>
+    </form>
+  </div>
 
 </body>
 </html>
+
